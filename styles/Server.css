@@ -1,0 +1,122 @@
+#Servers {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: var(--medium-gap);
+    width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    #Servers {
+        display: none;
+    }
+}
+
+.Server {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    padding: var(--medium-gap);
+    gap: var(--medium-gap);
+}
+
+.ServerTitle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: var(--fancy-font), sans-serif;
+    font-weight: bold;
+    gap: var(--small-gap);
+}
+
+.ServerDescription {
+    font-family: var(--sans-font), sans-serif;
+    font-size: 14px;
+
+    user-select: none;
+    cursor: pointer;
+}
+
+.ServerDescription p {
+    user-select: text;
+    cursor: text;
+}
+
+.ServerButton {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: var(--fancy-font), sans-serif;
+
+    text-decoration: none;
+    color: #00000099;
+    background-color: #e8e8e8;
+    white-space: nowrap;
+
+    border-radius: var(--border-radius);
+}
+
+.PlayButton {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+
+    transition: background-color 0.25s;
+
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+
+.PlayButton:hover, .PlayButton:focus {
+    background-color: rgb(183, 183, 183);
+}
+
+.PopulationButton {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+
+    background-color: rgb(183, 183, 183);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.StatusOnline {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    
+    background-color: green;
+    display: inline-block;
+}
+
+.StatusOffline {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    
+    background-color: red;
+    display: inline-block;
+}
+
+.ServerLinks {
+    display: flex;
+    gap: var(--small-gap);
+    justify-content: center;
+}
+
+.ServerLink {
+    flex-grow: 1;
+    text-align: center;
+    background-color: #315267f2;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    color: inherit;
+    white-space: nowrap;
+    transition: background-color 0.25s;
+
+    padding: 6px;
+}
+
+.ServerLink:hover, .ServerLink:focus {
+    background-color: #183040f2;
+}

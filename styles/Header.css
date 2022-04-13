@@ -1,0 +1,64 @@
+header {
+    display: flex;
+    padding: var(--medium-gap);
+
+    font-family: var(--fancy-font), sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .Logo {
+        margin: auto;
+    }
+
+    .Menu {
+        margin: auto;
+    }
+}
+
+.MainLogo {
+    height: 3rem;
+}
+
+.SS13Logo {
+    height: 1rem;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.LinkLogo {
+    height: 3rem;
+    width: 3rem;
+}
+
+.Menu {
+    display: flex;
+    font-weight: bold;
+    font-size: var(--medium-gap);
+    margin-left: auto;
+    gap: 10px;
+}
+
+.MenuItem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    transition: all 0.3s;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.MenuItem:hover, .MenuItem:focus {
+    color: rgb(49, 148, 214);
+}

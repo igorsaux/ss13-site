@@ -1,0 +1,48 @@
+/* Comforta font */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+/* PT Sans font */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('./constants.css');
+@import url('./Server.css');
+@import url('./News.css');
+@import url('./Background.css');
+@import url('./Header.css');
+
+html, body {
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        margin: 0;
+    }
+}
+
+.Main {
+    max-width: 65em;
+    margin: auto;
+}
+
+.Block {
+    background-color: #083448b3;
+    backdrop-filter: blur(2px);
+    border-radius: var(--border-radius);
+}
+
+#Content {
+    display: flex;
+    margin-top: var(--medium-gap);
+    gap: var(--medium-gap);
+}

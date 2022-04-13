@@ -1,0 +1,92 @@
+#Background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../static/background/background.png');
+
+    z-index: -5;
+
+    animation: stars-scrolling 60s linear infinite alternate;
+}
+
+@keyframes stars-scrolling {
+    from {
+        background-position: 233px 65px;
+    }
+
+    to {
+        background-position: 600px 800px;
+    }
+}
+
+#Clown {
+    width: 64px;
+    height: 64px;
+
+    z-index: 5;
+
+    background-image: url('../static/background/clown.png');
+    background-size: 64px;
+    background-repeat: no-repeat;
+
+    animation: clown-flying 180s linear infinite alternate;
+}
+
+@keyframes clown-flying {
+    from {
+        transform: translateY(180px) translateX(-400px) rotateZ(10deg);
+    }
+
+    to {
+        transform: translateY(300px) translateX(300vw) rotateZ(360deg);
+    }
+}
+
+#Assistant {
+    width: 64px;
+    height: 64px;
+
+    z-index: 5;
+
+    background-image: url('../static/background/assistant.png');
+    background-size: 64px;
+    background-repeat: no-repeat;
+
+    animation: assistant-flying 140s linear infinite alternate;
+}
+
+@keyframes assistant-flying {
+    from {
+        transform: translateY(70vh) translateX(-600px) rotateZ(360deg);
+    }
+
+    to {
+        transform: translateY(300px) translateX(200vw) rotateZ(0deg);
+    }
+}
+
+#Extinguisher {
+    width: 64px;
+    height: 64px;
+
+    z-index: 5;
+
+    background-image: url('../static/background/extinguisher.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+
+    animation: extinguisher-flying 60s linear infinite alternate;
+}
+
+@keyframes extinguisher-flying {
+    from {
+        transform: translateY(45vh) translateX(150vw) rotateZ(360deg);
+    }
+
+    to {
+        transform: translateY(300px) translateX(-350px) rotateZ(0deg);
+    }
+}
